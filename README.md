@@ -55,7 +55,7 @@ Trong thử nghiệm này, tôi đang sử dụng máy chủ ảo Linux (LVS) tr
 Step 1: Cài đặt LVS: 
 <img src=https://viblo.asia/uploads/342cfac6-48e6-4d5b-8949-695e2299781b.png>
 
-Step 2: Cài đặt TCP virtual service trên 192.168.1.75 port 80, Sử dụng round-robin algorithm. Thêm 2 nodes chạy trên apache 2.4
+Step 2: Cài đặt TCP virtual service trên 192.168.1.75 port 80, Sử dụng round-robin algorithm. Thêm 2 nodes chạy trên apache 2.4 </br>
 <img src=https://viblo.asia/uploads/d8115e1e-c58f-4253-babc-89977ae1b687.png>
 
 Step 3: Xác nhận địa chỉ IP đã thêm vào 
@@ -71,8 +71,8 @@ Step 5: Truy cập qua Web Browser
 Có thể thấy rằng server được chuyển đổi khi người dùng truy cập web page.
 
 # 7. References
-Load Balancer: https://f5.com/glossary/load-balancer
-What Is Layer 7 Load Balancing?: http://nginx.com/resources/glossary/layer-7-load-balancing/
-An overview of Load Balancing: http://blog.zhaw.ch/icclab/an-overview-of-load-balancing/
-Direct Server Return support in OpenBSD: http://undeadly.org/cgi?action=article&sid=20080617010016
+Load Balancer: https://f5.com/glossary/load-balancer </br>
+What Is Layer 7 Load Balancing?: http://nginx.com/resources/glossary/layer-7-load-balancing/ </br>
+An overview of Load Balancing: http://blog.zhaw.ch/icclab/an-overview-of-load-balancing/ </br>
+Direct Server Return support in OpenBSD: http://undeadly.org/cgi?action=article&sid=20080617010016 </br>
 Intro to Load Balancing for Developers – The Algorithms - https://devcentral.f5.com/articles/intro-to-load-balancing-for-developers-ndash-the-algorithms
