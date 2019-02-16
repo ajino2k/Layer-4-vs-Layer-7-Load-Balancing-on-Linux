@@ -4,6 +4,8 @@
 
 * Load balancers thường được chia thành hai loại chính: Layer 4 và Layer 7.
 
+<img src=https://raw.githubusercontent.com/ajino2k/Layer-4-vs-Layer-7-Load-Balancing-on-Linux/master/277e07bd-dfdd-4782-8e35-a00e06cac706.png>
+
 * Layer 4 load balancer xử lý dữ liệu tìm thấy trong các giao thức tầng mạng và giao vận (IP, TCP, FTP, UDP).
 
 * Layer 7 load balancer phân phối yêu cầu dựa trên dữ liệu tìm thấy trong tầng ứng dụng, lớp giao thức như HTTP.
@@ -16,7 +18,7 @@
 # 3. Sự khác biệt giữa NAT và DSR
 Hình ảnh sau đây minh hoạ sự khác biệt giữa NAT và DSR trong cân bằng tải:
 
-NAT_DSR_Compare.png
+<img src=https://viblo.asia/uploads/609795e4-45a5-4a54-9d63-c3db62a4a6b8.png>
 
 * Dễ dàng thấy rằng các client (192.0.2.1) kết nối đến tải cân bằng (LB) trên VIP (IP ảo) (192.0.2.253).
 
@@ -50,15 +52,21 @@ Ngoài ra, chúng ta có thể sử dụng HAProxy, Pound và Nginx hoạt độ
 # 6. Thực hành với LVS
 Trong thử nghiệm này, tôi đang sử dụng máy chủ ảo Linux (LVS) trên Ubuntu 12.04 để tạo một cân bằng tải của hai máy chủ thực sự (back end nodes, running Apache)
 
-Step 1: Cài đặt LVS: Install_LVS.png
+Step 1: Cài đặt LVS: 
+<img src=https://viblo.asia/uploads/342cfac6-48e6-4d5b-8949-695e2299781b.png>
 
-Step 2: Cài đặt TCP virtual service trên 192.168.1.75 port 80, Sử dụng round-robin algorithm. Thêm 2 nodes chạy trên apache 2.4 Add_nodes_real_server.png
+Step 2: Cài đặt TCP virtual service trên 192.168.1.75 port 80, Sử dụng round-robin algorithm. Thêm 2 nodes chạy trên apache 2.4
+<img src=https://viblo.asia/uploads/d8115e1e-c58f-4253-babc-89977ae1b687.png>
 
-Step 3: Xác nhận địa chỉ IP đã thêm vào List_all_ips_table.png
+Step 3: Xác nhận địa chỉ IP đã thêm vào 
+<img src=https://viblo.asia/uploads/f4c3a205-62d1-4cea-978b-0b5c406ffbec.png>
 
-Step 4: Truy cập qua CURL command line Access_server_via_curl.png
+Step 4: Truy cập qua CURL command line 
+<img src=https://viblo.asia/uploads/e9254289-6c43-4f67-b3d8-bc4279786ccd.png>
 
-Step 5: Truy cập qua Web Browser Access_server_1_via_webbrowser.png Access_server_2_via_webbrowser.png
+Step 5: Truy cập qua Web Browser 
+<img src=https://viblo.asia/uploads/7da54003-9dcb-4211-86a9-e9e694a221df.png>
+<img src=https://viblo.asia/uploads/e312e1db-e594-42d0-9644-b1ea1144e186.png>
 
 Có thể thấy rằng server được chuyển đổi khi người dùng truy cập web page.
 
